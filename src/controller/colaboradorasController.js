@@ -36,8 +36,24 @@ const deleteById = async (req, res) => {
     }
 }
 
+const login = (req, res) => {
+    ColaboradorasModel.findOne({email: req.body.email}, function (err, colaboradora) {
+        if(!colaboradora) {
+            return res.status(404).send(`Não existe colaboradora com o email ${req.body.email}`)
+        }
+        const senhaValida = bcrypt.compareSync(req.body.senha, colaboradora.senha)
+
+        if(!senhaValida){
+            return res.status(403).send('Senha Inválida')
+        }
+        const token = jwt.sign({email: req.body.email}, SECRET)
+        res.status(200).send(token)
+    })
+}
+
 module.exports = {
     create,
     getAll,
-    deleteById
+    deleteById,
+    login
 }
