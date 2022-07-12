@@ -16,6 +16,16 @@ const create = (req, res) => {
     })
 }
 
+const getAll = (req, res) => {
+    ColaboradorasModel.find(function (err, colaboradoras){
+        if(err){
+            res.status(500).send({message: err.message})
+        }
+        res.status(200).send(colaboradoras)
+    })
+}
+
 module.exports = {
-    create
+    create,
+    getAll
 }
