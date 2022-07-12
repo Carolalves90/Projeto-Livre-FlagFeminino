@@ -25,7 +25,19 @@ const getAll = (req, res) => {
     })
 }
 
+const deleteById = async (req, res) => {
+    try{
+        const { id } = req.params
+        await ColaboradorasModel.findByIdAndDelete(id)
+        res.status(200).json({message: `A colaboradora com o ${id} foi deletada com sucesso`})
+    } catch (err) {
+        console.error(err)
+        res.status(500).json({message: err.message})
+    }
+}
+
 module.exports = {
     create,
-    getAll
+    getAll,
+    deleteById
 }
