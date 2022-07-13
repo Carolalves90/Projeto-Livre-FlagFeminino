@@ -11,6 +11,7 @@ app.use(express.json())
 mongoose.connect()
 
 app.use(colaboradorasRoutes)
-// app.use(flagfemininoRoutes)
+//app.use("/flagfeminino", flagfemininoRoutes)
+app.use("/flagfeminino", timesfemininosRoutes)
 
 module.exports = app
