@@ -6,6 +6,12 @@ const selecaoSchema = new mongoose.Schema({
     ano: {type: Number},
     colocacaoFinal: {type: String},
     chavePaises: [{type: String}],
+    treinadores:[{
+        headCoach: {type: String},
+        ataqueCoach: {type: String},
+        defesaCoach: {type: String},
+        auxiliares: {type: String}
+    }],
     atletasRelacionadas: [{type: String}],
     jogosCampeonato:[{
         jogoNumero: {type: Number},
