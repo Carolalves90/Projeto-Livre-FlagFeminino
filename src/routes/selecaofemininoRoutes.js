@@ -2,9 +2,10 @@ const express = require('express')
 const router = express.Router()
 const controller = require('../controller/selecaofemininoController')
 
-//router.get('/selecao', controller.historyCreate)
-// router.get('/selecao/timeline', controller.)
-// router.get('/selecao/proximosjogos', controller.)
+//router.post('/selecao', controller.historyCreate)
+// router.get('/selecao', controller.)
+// router.put('/selecao', controller.)
+// router.delete('/selecao', controller.)
 
 
 
