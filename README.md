@@ -4,32 +4,55 @@
 
 # Delas Flag Football Brasil
 
-Essa é uma API que busca dar mais visibilidade a *Seleção Feminina de Flag Football* resgatando a história do Flag Football Feminino no Brasil. 
+O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que está acontecendo em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
+Neste projeto vamos listar as conquistas da *Seleção Brasileira de Flag Football* buscando dar mais visibilidade à modalidade e em consequencia ao esporte feminino, alem do mais irá mostrar a evolução da equipe dentro do esporte e nas competições.
 
-Nela irá conter uma timeline com campeonatos e colocação da seleção feminina de flag football, com possibilidade de cadastro de times.
+Neste projeto teremos 2 API's:
+
+API da *Seleção Feminina de Flag Football* onde iremos listar as competições que a participou, trazendo informações como:
+ 
+- [x] Campeonato
+- [x] Ano de realização
+- [x] Nome dos País na Chave da equipe
+- [x] Colocação da Final no Campeonato
+- [x] Treinadores
+- [x] Atletas Relacionadas
+- [x] Jogos Realizados 
+
+API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e buscar informações.
+
+- [x] Nome da equipe
+- [x] Cidade
+- [x] Estado
+- [x] Rede Social
+- [x] Contato
+- [x] Modalidades
 
 ## Rotas/EndPoints:
 
-``GET/`` 
-- *colaboradoras* - Retorna lista de colaboradoras
-- *flagfeminino/selecao* - Retorna a história da seleção feminina de flag
-- *flagfeminino/selecao/timeline* - Retorna os resultados de campeonatos da seleção feminina
-- *flagfeminino/selecao/proximosjogos* - Retorna as próximas competições da seleção feminina de flag
+- Colaboradoras
 
-``POST/``
-- *colaboradoras* - Recebe cadastro de colaboradora
-- *colaboradoras/login* - Recebe o login de colaboradora
-- *flagfeminino/selecao* - Recebe a história da seleção feminina de flag (proteger rota)
-- *flagfeminino/selecao/timeline* - Recebe os resultados de campeonatos da seleção feminina (proteger rota)
-- *flagfeminino/selecao/proximosjogos* - Recebe as próximas competições da seleção feminina de flag (proteger rota)
+| Verbo  |            EndPoint        |        Descrição da Rota                   | Status |
+| ------ | -------------------------- | -------------------------------------------| ------ |
+| POST   | flagfeminino/colaboradoras | Adicionar uma nova colaboradora            |   201  |
+| GET    | flagfeminino/colaboradoras | Listar todas colaboradoras                 |   200  |
+| Post   | flagfeminino/colaboradoras/login | Devolve o token de uma colaboradora  |   200  |
+| DELETE | flagfeminino/colaboradoras/:id | Remove uma colaboradora                |   200  |
 
-``PUT/``
-- *flagfeminino/selecao* - Atualiza  a história da seleção feminina de flag (proteger rota)
-- *flagfeminino/selecao/timeline* - Atualiza os resultados de campeonatos da seleção feminina (proteger rota)
-- *flagfeminino/selecao/proximosjogos* - Atualiza  as próximas competições da seleção feminina de flag (proteger rota)
+- Seleção Brasileira Feminina de Flag Football
 
+| Verbo  |          EndPoint        |         Descrição da Rota               | Status |
+| ------ | ------------------------ | ----------------------------------------| ------ |
+| POST   |   flagfeminino/selecao   | Adiciona informação sobre campeonato    |   201  |
+| GET    |   flagfeminino/selecao   | Listar todos os campeonatos cadastrados |   200  |
+| PUT    | flagfeminino/selecao/:id | Atualiza informações sobre o campeonato |   200  |
+| DELETE | flagfeminino/selecao/:id | Remove o cadastro do campeonato         |   200  |
 
-``DELETE/``
-- *colaboradoras/login/:id* - Deleta colaboradora por id
-- *flagfeminino/selecao/timeline/:id* - Deleta os resultados de campeonatos da seleção feminina (proteger rota)
-- *flagfeminino/selecao/proximosjogos/:id* -  Deleta  as próximas competições da seleção feminina de flag (proteger rota)
+- Times Femininos de Flag Football no Brasil
+
+| Verbo  |            EndPoint         | Descrição da Rota                      | Status |
+| ------ | --------------------------- | ---------------------------------------| ------ |
+| POST   | flagfeminino/timesfemininos | Adicionar um novo time de flag         |   201  |
+| GET    | flagfeminino/timesfemininos | Listar todos times cadastrados         |   200  |
+| PUT    | flagfeminino/timesfemininos/:id | Atualiza o cadastro de um time     |   200  |
+| DELETE | flagfeminino/timesfemininos/:id | Remove o cadastro de um time       |   200  |
