@@ -1,8 +1,8 @@
 require('dotenv').config()
 const express = require('express')
 const mongoose = require('./database/mongooseConect')
+const timesfemininosRoutes = require('./routes/timesfemininosRoutes')
 const colaboradorasRoutes = require('./routes/colaboradorasRoutes')
-//const flagfemininoRoutes = require('./routes/flagfemininoRoutes')
 
 const app = express()
 
@@ -11,7 +11,6 @@ app.use(express.json())
 mongoose.connect()
 
 app.use(colaboradorasRoutes)
-//app.use("/flagfeminino", flagfemininoRoutes)
-app.use("/flagfeminino", timesfemininosRoutes)
+app.use(timesfemininosRoutes)
 
 module.exports = app
