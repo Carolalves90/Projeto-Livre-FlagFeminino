@@ -32,27 +32,27 @@ API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e bu
 
 - Colaboradoras
 
-| Verbo  |            EndPoint        |        Descrição da Rota                   | Status |
-| ------ | -------------------------- | -------------------------------------------| ------ |
-| POST   | flagfeminino/colaboradoras | Adicionar uma nova colaboradora            |   201  |
-| GET    | flagfeminino/colaboradoras | Listar todas colaboradoras                 |   200  |
-| Post   | flagfeminino/colaboradoras/login | Devolve o token de uma colaboradora  |   200  |
-| DELETE | flagfeminino/colaboradoras/:id | Remove uma colaboradora                |   200  |
+| Verbo  |   EndPoint     |        Descrição da Rota                   | Status | Auth |
+| ------ | -------------- | -------------------------------------------| ------ |----- |
+| POST   | /colaboradoras | Adicionar uma nova colaboradora            |   201  |  ✔️  |
+| GET    | /colaboradoras | Listar todas colaboradoras                 |   200  |  ❌  |
+| Post   | /colaboradoras/login | Devolve o token de uma colaboradora  |   200  |  ✔️  |
+| DELETE | /colaboradoras/:id | Remove uma colaboradora                |   200  |  ✔️  |
 
 - Seleção Brasileira Feminina de Flag Football
 
-| Verbo  |          EndPoint        |         Descrição da Rota               | Status |
-| ------ | ------------------------ | ----------------------------------------| ------ |
-| POST   |   flagfeminino/selecao   | Adiciona informação sobre campeonato    |   201  |
-| GET    |   flagfeminino/selecao   | Listar todos os campeonatos cadastrados |   200  |
-| PUT    | flagfeminino/selecao/:id | Atualiza informações sobre o campeonato |   200  |
-| DELETE | flagfeminino/selecao/:id | Remove o cadastro do campeonato         |   200  |
+| Verbo  |   EndPoint   |         Descrição da Rota               | Status | Auth |
+| ------ | ------------ | ----------------------------------------| ------ |----- |
+| POST   |   /selecao   | Adiciona informação sobre campeonato    |   201  |  ✔️  |
+| GET    |   /selecao   | Listar todos os campeonatos cadastrados |   200  |  ❌  |
+| PUT    | /selecao/:id | Atualiza informações sobre o campeonato |   200  |  ✔️  |
+| DELETE | /selecao/:id | Remove o cadastro do campeonato         |   200  |  ✔️  |
 
 - Times Femininos de Flag Football no Brasil
 
-| Verbo  |            EndPoint         | Descrição da Rota                      | Status |
-| ------ | --------------------------- | ---------------------------------------| ------ |
-| POST   | flagfeminino/timesfemininos | Adicionar um novo time de flag         |   201  |
-| GET    | flagfeminino/timesfemininos | Listar todos times cadastrados         |   200  |
-| PUT    | flagfeminino/timesfemininos/:id | Atualiza o cadastro de um time     |   200  |
-| DELETE | flagfeminino/timesfemininos/:id | Remove o cadastro de um time       |   200  |
+| Verbo  |   EndPoint      | Descrição da Rota                      | Status | Auth |
+| ------ | --------------- | ---------------------------------------| ------ |----- |
+| POST   | /timesfemininos | Adicionar um novo time de flag         |   201  |  ✔️  |
+| GET    | /timesfemininos | Listar todos times cadastrados         |   200  |  ❌  |
+| PUT    | /timesfemininos/:id | Atualiza o cadastro de um time     |   200  |  ✔️  |
+| DELETE | /timesfemininos/:id | Remove o cadastro de um time       |   200  |  ✔️  |
