@@ -36,7 +36,7 @@ API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e bu
 | ------ | -------------- | -------------------------------------------| ------ |----- |
 | POST   | /colaboradoras | Adicionar uma nova colaboradora            |   201  |  ✔️  |
 | GET    | /colaboradoras | Listar todas colaboradoras                 |   200  |  ❌  |
-| Post   | /colaboradoras/login | Devolve o token de uma colaboradora  |   200  |  ✔️  |
+| POST   | /colaboradoras/login | Devolve o token de uma colaboradora  |   200  |  ✔️  |
 | DELETE | /colaboradoras/:id | Remove uma colaboradora                |   200  |  ✔️  |
 
 - Seleção Brasileira Feminina de Flag Football
