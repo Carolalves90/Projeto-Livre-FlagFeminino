@@ -4,7 +4,6 @@ const mongoose = require('./database/mongooseConect')
 const index = require('./routes/index')
 const timesfemininosRoutes = require('./routes/timesfemininosRoutes')
 const colaboradorasRoutes = require('./routes/colaboradorasRoutes')
-
 const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('../swagger/swagger_output.json')
 
@@ -14,9 +13,9 @@ app.use(express.json())
 
 mongoose.connect()
 
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 app.use(index)
 app.use(colaboradorasRoutes)
 app.use(timesfemininosRoutes)
-app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 module.exports = app
