@@ -67,7 +67,11 @@ const updateTeam = async (req, res) => {
 }
 
 const deleteTeam = (req, res) => {
+    try{
 
+    } catch (error){
+
+    }
 }
 
 module.exports = {
