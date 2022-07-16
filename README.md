@@ -1,10 +1,19 @@
-<div align="center">
+<h1 align="center">
 <img src="https://user-images.githubusercontent.com/82970341/178192797-8f9be18c-8328-4bc7-800e-536daa78af10.jpg" width="600px"/>
-</div>
-
-# Delas Flag Football Brasil
+<p align="center"><b>Delas Flag Football Brasil </b><p>
+</h1>
 
 O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que está acontecendo em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
+
+# Mas... O Que é o Flag Football 5x5?
+
+O Flag Football 5x5 é uma modalidade esportiva jogada entre duas equipes, sendo um time de ataque e um time de defesa em campo. A missão do time de ataque é atravessar todo o campo adversário, chegando na área denominada Endzone para, então, pontuar (marcar um Touchdown), sendo quatro tentativas para alcançar o meio do campo (Firstdown) e depois mais quatro tentativas marcar a pontuação, quando se atinge a Endzone. O objetivo da defesa é impedir que o time adversário avance, de forma que ao final das tentativas ou através de uma interceptação (ao obter a posse da bola), coloque seu time de ataque em campo. Esta modalidade é conhecida por ser um esporte em que o contato físico deve ser evitado, sendo intencional ou não, pois é passível a falta.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/82970341/179326705-41d9de75-221a-4a95-adb7-b88e9095897b.gif" width="600px">
+</div>
+
+
 Neste projeto vamos listar as conquistas da *Seleção Brasileira de Flag Football* buscando dar mais visibilidade à modalidade e em consequencia ao esporte feminino, alem do mais irá mostrar a evolução da equipe dentro do esporte e nas competições.
 
 Neste projeto teremos 2 API's:
