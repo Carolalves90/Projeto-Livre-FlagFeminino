@@ -66,11 +66,25 @@ const updateTeam = async (req, res) => {
     }
 }
 
-const deleteTeam = (req, res) => {
+const deleteTeam = async (req, res) => {
     try{
+        const authHeader = req.get('authorization')
 
+        if(!authHeader) {
+            return res.status(401).send('É necessário um Token')    
+        }
+            const token = authHeader.split(' ')[1]
+            await jwt.verify(token, SECRET, async function(erro){
+                if(erro) {
+                    return res.status(403).send('Token inválido')
+                }
+                const { id } = req.params
+                await TimesfemininosModel.findByIdAndDelete(id)
+                res.status(200).json({message: `Time com o id ${id} deletado com sucesso`})
+            })
     } catch (error){
-
+        console.error(error)
+        res.status(500).json({message: error.message})
     }
 }
 
