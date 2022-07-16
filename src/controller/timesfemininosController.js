@@ -1,5 +1,4 @@
 const TimesfemininosModel = require('../model/timesfemininosModel')
-const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const SECRET = process.env.SECRET
 
