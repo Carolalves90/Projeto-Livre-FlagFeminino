@@ -14,7 +14,7 @@ const teamCreate = async (req, res) => {
 
             await jwt.verify(token, SECRET, async function (erro){
                 if (erro){
-                    return res.status(403).send('Você não está autorizado')
+                    return res.status(403).send('Token inválido')
                 }
                 const {nome, cidade, estado, redesocial, contato, modalidades} = req.body
                 const newTeam = new TimesfemininosModel({
@@ -41,7 +41,38 @@ const findAllTeams = async (req, res) => {
     }
 }
 
+const updateTeam = async (req, res) => {
+    try{
+        const authHeader = req.get('authorization')
+
+        if(!authHeader){
+            return res.status(401).send('É necesssário um token')
+        }
+            const token = authHeader.split(' ')[1]
+    
+            await jwt.verify(token, SECRET, async function (erro) {
+                if (erro) {
+                    return res.status(403).send('Token inválido')
+                }
+                const { nome, cidade, estado, redesocial, contato, modalidades } = req.body
+                const updatedTeam = await TimesfemininosModel.findByIdAndUpdate(req.params.id, {
+                    nome, cidade, estado, redesocial, contato, modalidades
+                })
+                res.status(200).json(updatedTeam)
+            })
+    } catch(error){
+        console.log(error)
+        res.status(500).json({message: error.message})
+    }
+}
+
+const deleteTeam = (req, res) => {
+
+}
+
 module.exports = {
     teamCreate,
-    findAllTeams
+    findAllTeams,
+    updateTeam,
+    deleteTeam
 }
