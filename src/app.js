@@ -15,7 +15,7 @@ app.use(express.json())
 
 mongoose.connect()
 
-app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+app.use('/documentacao', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use('/', index)
 app.use(colaboradorasRoutes)
 app.use(timesfemininosRoutes)
