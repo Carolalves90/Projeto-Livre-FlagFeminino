@@ -17,8 +17,8 @@ mongoose.connect()
 
 app.use('/documentacao', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use('/', index)
-app.use(colaboradorasRoutes)
-app.use(timesfemininosRoutes)
-app.use(selecaofemininaRoutes)
+app.use('/', colaboradorasRoutes)
+app.use('/', timesfemininosRoutes)
+app.use('/', selecaofemininaRoutes)
 
 module.exports = app
