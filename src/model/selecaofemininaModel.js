@@ -5,24 +5,28 @@ const selecaoSchema = new mongoose.Schema({
     local: {type: String},
     ano: {type: Number},
     colocacaoFinal: {type: String},
-    chavePaises: [{type: String}],
-    treinadores:[{
+    chavePaises: {type: [String]},
+    treinadores:[
+    {
         headCoach: {type: String},
         ataqueCoach: {type: String},
         defesaCoach: {type: String},
-        auxiliares: {type: String}
-    }],
-    atletasRelacionadas: [{type: String}],
-    jogosCampeonato:[{
-        jogoNumero: {type: Number},
-        paisContra: {type: String},
-        fase: {type: String},
-        placar: {type: String},
-        local: {type: String},
-        dataCalendario: {type: String},
-        diaSemana: {type: String},
-        horario: {type: String}
-}]
+        auxiliares: {type: [String]}
+    }
+],
+    atletasRelacionadas: {type: [String]},
+    jogosCampeonato:[
+        {
+            jogoNumero: {type: Number},
+            paisContra: {type: [String]},
+            fase: {type: String},
+            placar: {type: String},
+            localJogo: {type: String},
+            dataCalendario: {type: String},
+            diaSemana: {type: String},
+            horario: {type: String}
+        }
+    ]
 },{
     versionKey: false
 })
