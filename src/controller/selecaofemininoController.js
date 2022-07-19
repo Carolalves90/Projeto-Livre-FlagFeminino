@@ -15,7 +15,15 @@ const createInfo = async(req, res) => {
                 if(error){
                     return res.status(403).send('Token inválido')
                 }
-                // codigo aqui
+                const {campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
+                    jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario} = req.body
+                const newInfo = new SelecaofemininaModel({
+                    campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
+                    jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario
+                })
+                const savedInfo = await newInfo.save()
+
+                res.status(201).json(savedInfo)
             })
     }catch (error){
         console.log(error)
