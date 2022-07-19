@@ -31,6 +31,18 @@ const createInfo = async(req, res) => {
     }
 }
 
+const getAll = async (req, res) => {
+    try{
+        const allInfo = await SelecaofemininaModel.find()
+        res.status(200).json(allInfo)
+
+    }catch (error){
+        console.error(error)
+        res.status(500).json({message: error.message})
+    }
+}
+
 module.exports ={
-    createInfo
+    createInfo,
+    getAll
 }
