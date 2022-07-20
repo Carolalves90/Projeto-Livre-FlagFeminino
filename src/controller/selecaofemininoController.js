@@ -42,7 +42,35 @@ const getAll = async (req, res) => {
     }
 }
 
+const updateInfo = async ( req, res) => {
+    try{
+        const authHeader = req.get('authorization')
+
+        if(!authHeader) {
+            return res.status(401).send('É necessário um token')
+        }
+            const token = authHeader.split(' ')[1]
+
+            await jwt.verify(token, SECRET, async function(erro){
+                if(erro) {
+                    return res.status(403).send('Token inválido')
+                }
+                const {campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
+                jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario} = req.body
+                
+                const updatedInfo = await SelecaofemininaModel.findByIdAndUpdate(req.params.id, {
+                    campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
+                    jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario
+                })
+                res.status(200).json(updatedInfo)
+            })
+    } catch (error) {
+
+    }
+}
+
 module.exports ={
     createInfo,
-    getAll
+    getAll,
+    updateInfo
 }
