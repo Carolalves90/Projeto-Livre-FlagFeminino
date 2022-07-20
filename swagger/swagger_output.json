@@ -257,8 +257,81 @@
     "/selecao": {
       "post": {
         "description": "",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "campeonato": {
+                  "example": "any"
+                },
+                "local": {
+                  "example": "any"
+                },
+                "ano": {
+                  "example": "any"
+                },
+                "colocacaoFinal": {
+                  "example": "any"
+                },
+                "chavePaises": {
+                  "example": "any"
+                },
+                "treinadores": {
+                  "example": "any"
+                },
+                "headCoach": {
+                  "example": "any"
+                },
+                "ataqueCoach": {
+                  "example": "any"
+                },
+                "defesaCoach": {
+                  "example": "any"
+                },
+                "auxiliares": {
+                  "example": "any"
+                },
+                "atletasRelacionadas": {
+                  "example": "any"
+                },
+                "jogosCampeonato": {
+                  "example": "any"
+                },
+                "jogoNumero": {
+                  "example": "any"
+                },
+                "paisContra": {
+                  "example": "any"
+                },
+                "fase": {
+                  "example": "any"
+                },
+                "placar": {
+                  "example": "any"
+                },
+                "localJogo": {
+                  "example": "any"
+                },
+                "dataCalendario": {
+                  "example": "any"
+                },
+                "diaSemana": {
+                  "example": "any"
+                },
+                "horario": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
+          "201": {
+            "description": "Created"
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -267,6 +340,111 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/selecao/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "campeonato": {
+                  "example": "any"
+                },
+                "local": {
+                  "example": "any"
+                },
+                "ano": {
+                  "example": "any"
+                },
+                "colocacaoFinal": {
+                  "example": "any"
+                },
+                "chavePaises": {
+                  "example": "any"
+                },
+                "treinadores": {
+                  "example": "any"
+                },
+                "headCoach": {
+                  "example": "any"
+                },
+                "ataqueCoach": {
+                  "example": "any"
+                },
+                "defesaCoach": {
+                  "example": "any"
+                },
+                "auxiliares": {
+                  "example": "any"
+                },
+                "atletasRelacionadas": {
+                  "example": "any"
+                },
+                "jogosCampeonato": {
+                  "example": "any"
+                },
+                "jogoNumero": {
+                  "example": "any"
+                },
+                "paisContra": {
+                  "example": "any"
+                },
+                "fase": {
+                  "example": "any"
+                },
+                "placar": {
+                  "example": "any"
+                },
+                "localJogo": {
+                  "example": "any"
+                },
+                "dataCalendario": {
+                  "example": "any"
+                },
+                "diaSemana": {
+                  "example": "any"
+                },
+                "horario": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
         }
       }
