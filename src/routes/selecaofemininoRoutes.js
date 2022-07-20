@@ -4,7 +4,7 @@ const controller = require('../controller/selecaofemininoController')
 
 router.post('/selecao', controller.createInfo)
 router.get('/selecao', controller.getAll)
-// router.put('/selecao', controller.)
+router.put('/selecao/:id', controller.updateInfo)
 // router.delete('/selecao', controller.)
 
 
