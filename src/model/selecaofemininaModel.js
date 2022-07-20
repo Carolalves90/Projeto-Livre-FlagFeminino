@@ -18,7 +18,7 @@ const selecaoSchema = new mongoose.Schema({
     jogosCampeonato:[
         {
             jogoNumero: {type: Number},
-            paisContra: {type: [String]},
+            paisContra: {type: String},
             fase: {type: String},
             placar: {type: String},
             localJogo: {type: String},
