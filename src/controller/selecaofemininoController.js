@@ -91,9 +91,21 @@ const deleteInfo = async (req, res) => {
     }
 }
 
+const createGame = async (req, res) => {
+    try{
+        const { id } = req.params
+        const idRequest = await SelecaofemininaModel.findById(id)
+
+        // quando achar o id cadastrar um novo array de jogos
+    } catch (error) {
+
+    }
+}
+
 module.exports ={
     createInfo,
     getAll,
     updateInfo,
-    deleteInfo
+    deleteInfo,
+    createGame
 }
