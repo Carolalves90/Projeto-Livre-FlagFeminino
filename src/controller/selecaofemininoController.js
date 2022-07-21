@@ -1,5 +1,6 @@
 const SelecaofemininaModel = require('../model/selecaofemininaModel')
 const jwt = require('jsonwebtoken')
+const { response } = require('../app')
 const SECRET = process.env.SECRET
 
 const createInfo = async(req, res) => {
@@ -102,10 +103,21 @@ const createGame = async (req, res) => {
     }
 }
 
+const findInfoById = async (req, res) => {
+    try {
+        const findInfo = await SelecaofemininaModel.findById(req.params.id)
+        res.status(200).json(findInfo)
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({message: error.message})
+    }
+}
+
 module.exports ={
     createInfo,
     getAll,
     updateInfo,
     deleteInfo,
-    createGame
+    createGame,
+    findInfoById
 }
