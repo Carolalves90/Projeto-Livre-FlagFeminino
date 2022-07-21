@@ -19,7 +19,9 @@ O Flag Football 5x5 é uma modalidade esportiva jogada entre duas equipes, sendo
 
 Neste projeto vamos listar as conquistas da *Seleção Brasileira de Flag Football* buscando dar mais visibilidade à modalidade e em consequencia ao esporte feminino, alem do mais irá mostrar a evolução da equipe dentro do esporte e nas competições.
 
-Neste projeto teremos 2 API's:
+Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-br.herokuapp.com/), para acessar a documentação do projeto [acesse aqui](https://projeto-delas-flag-feminino-br.herokuapp.com/documentacao/) :football:
+
+Neste projeto teremos 2 API's, sendo possível visualizar as informações cadastradas, porém para manipular será necessário efetuar login.
 
 API da *Seleção Feminina de Flag Football* onde iremos listar as competições que a participou, trazendo informações como:
  
@@ -57,6 +59,7 @@ API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e bu
 | ------ | ------------ | ----------------------------------------| ------ |----- |
 | POST   |   /selecao   | Adiciona informação sobre campeonato    |   201  |  ✔️  |
 | GET    |   /selecao   | Listar todos os campeonatos cadastrados |   200  |  ❌  |
+| GET    | /selecao/:id | Mostra o cadastro do campeonato por ID  |   200  |  ❌  |
 | PUT    | /selecao/:id | Atualiza informações sobre o campeonato |   200  |  ✔️  |
 | DELETE | /selecao/:id | Remove o cadastro do campeonato         |   200  |  ✔️  |
 
