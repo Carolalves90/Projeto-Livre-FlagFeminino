@@ -69,7 +69,7 @@ const updateInfo = async ( req, res) => {
     }
 }
 
-const deleteInfo = (req, res) => {
+const deleteInfo = async (req, res) => {
     try{
         const authHeader = req.get('authorization')
 
