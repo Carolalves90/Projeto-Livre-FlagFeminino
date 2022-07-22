@@ -6,26 +6,11 @@ const selecaoSchema = new mongoose.Schema({
     ano: {type: Number},
     colocacaoFinal: {type: String},
     chavePaises: {type: [String]},
-    treinadores:[
-    {
-        headCoach: {type: String},
-        ataqueCoach: {type: String},
-        defesaCoach: {type: String},
-        auxiliares: {type: [String]}
-    }
-],
+    treinadores: {type: [String]},
     atletasRelacionadas: {type: [String]},
     jogosCampeonato:[
-        {
-            jogoNumero: {type: Number},
-            paisContra: {type: String},
-            fase: {type: String},
-            placar: {type: String},
-            localJogo: {type: String},
-            dataCalendario: {type: String},
-            diaSemana: {type: String},
-            horario: {type: String}
-        }
+        {type: mongoose.Schema.Types.ObjectId,
+        ref: 'jogosCampeonato' }
     ]
 },{
     versionKey: false
