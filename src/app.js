@@ -6,6 +6,7 @@ const index = require('./routes/index')
 const colaboradorasRoutes = require('./routes/colaboradorasRoutes')
 const timesfemininosRoutes = require('./routes/timesfemininosRoutes')
 const selecaofemininaRoutes = require('./routes/selecaofemininoRoutes')
+const jogosCampeonatoRoutes = require('./routes/jogosCampeonatoRoutes')
 
 const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('../swagger/swagger_output.json')
@@ -21,5 +22,6 @@ app.use('/', index)
 app.use('/', colaboradorasRoutes)
 app.use('/', timesfemininosRoutes)
 app.use('/', selecaofemininaRoutes)
+app.use('/', jogosCampeonatoRoutes)
 
 module.exports = app
