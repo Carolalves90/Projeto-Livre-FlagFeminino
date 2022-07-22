@@ -53,16 +53,6 @@ API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e bu
 | POST   | /colaboradoras/login | Devolve o token de uma colaboradora  |   200  |  ✔️  |
 | DELETE | /colaboradoras/:id | Remove uma colaboradora                |   200  |  ✔️  |
 
-- Seleção Brasileira Feminina de Flag Football
-
-| Verbo  |   EndPoint   |         Descrição da Rota               | Status | Auth |
-| ------ | ------------ | ----------------------------------------| ------ |----- |
-| POST   |   /selecao   | Adiciona informação sobre campeonato    |   201  |  ✔️  |
-| GET    |   /selecao   | Listar todos os campeonatos cadastrados |   200  |  ❌  |
-| GET    | /selecao/:id | Mostra o cadastro do campeonato por ID  |   200  |  ❌  |
-| PUT    | /selecao/:id | Atualiza informações sobre o campeonato |   200  |  ✔️  |
-| DELETE | /selecao/:id | Remove o cadastro do campeonato         |   200  |  ✔️  |
-
 - Times Femininos de Flag Football no Brasil
 
 | Verbo  |   EndPoint      | Descrição da Rota                      | Status | Auth |
@@ -71,3 +61,23 @@ API de *Times Femininos de Flag Football*, onde é será possivel cadastrar e bu
 | GET    | /timesfemininos | Listar todos times cadastrados         |   200  |  ❌  |
 | PUT    | /timesfemininos/:id | Atualiza o cadastro de um time     |   200  |  ✔️  |
 | DELETE | /timesfemininos/:id | Remove o cadastro de um time       |   200  |  ✔️  |
+
+- Seleção Brasileira Feminina de Flag Football
+
+| Verbo  |   EndPoint   |         Descrição da Rota               | Status | Auth |
+| ------ | ------------ | ----------------------------------------| ------ |----- |
+| POST   |   /selecao   | Adiciona informação sobre campeonato    |   201  |  ✔️  |
+| GET    |   /selecao   | Listar todos os campeonatos cadastrados |   200  |  ❌  |
+| GET    | /selecao/:id | Mostra o cadastro do campeonato por ID  |   200  |  ❌  |
+| PUT    | /selecao/:id | Atualiza informações sobre o campeonato |   200  |  ✔️  |
+| PATCH  | /selecao/:id | Cadastra um jogo dentro de um campeonato|   201  |  ✔️  |
+| DELETE | /selecao/:id | Remove o cadastro do campeonato         |   200  |  ✔️  |
+
+- Jogos da Seleção Brasileira Feminina de Flag Football
+
+| Verbo  |  EndPoint  |         Descrição da Rota               | Status | Auth |
+| ------ | ---------- | ----------------------------------------| ------ |----- |
+| POST   |   /jogos   | Adiciona informação sobre campeonato    |   201  |  ✔️  |
+| GET    |   /jogos   | Listar todos os campeonatos cadastrados |   200  |  ❌  |
+| PUT    | /jogos/:id | Atualiza informações sobre o jogo       |   200  |  ✔️  |
+| DELETE | /jogos/:id | Remove o jogo cadastrado                |   200  |  ✔️  |
