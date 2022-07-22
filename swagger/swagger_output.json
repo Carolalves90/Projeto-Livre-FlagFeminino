@@ -296,33 +296,6 @@
                 },
                 "atletasRelacionadas": {
                   "example": "any"
-                },
-                "jogosCampeonato": {
-                  "example": "any"
-                },
-                "jogoNumero": {
-                  "example": "any"
-                },
-                "paisContra": {
-                  "example": "any"
-                },
-                "fase": {
-                  "example": "any"
-                },
-                "placar": {
-                  "example": "any"
-                },
-                "localJogo": {
-                  "example": "any"
-                },
-                "dataCalendario": {
-                  "example": "any"
-                },
-                "diaSemana": {
-                  "example": "any"
-                },
-                "horario": {
-                  "example": "any"
                 }
               }
             }
@@ -357,6 +330,46 @@
       }
     },
     "/selecao/{id}": {
+      "patch": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "get": {
         "description": "",
         "parameters": [
@@ -464,6 +477,9 @@
           },
           "403": {
             "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -486,6 +502,66 @@
           },
           "403": {
             "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/jogos": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "jogoNumero": {
+                  "example": "any"
+                },
+                "paisContra": {
+                  "example": "any"
+                },
+                "fase": {
+                  "example": "any"
+                },
+                "placar": {
+                  "example": "any"
+                },
+                "localJogo": {
+                  "example": "any"
+                },
+                "dataCalendario": {
+                  "example": "any"
+                },
+                "diaSemana": {
+                  "example": "any"
+                },
+                "horario": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"
