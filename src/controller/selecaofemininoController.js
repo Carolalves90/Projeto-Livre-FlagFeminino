@@ -16,9 +16,9 @@ const createInfo = async(req, res) => {
                 if(error){
                     return res.status(403).send('Token inválido')
                 }
-                const {campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas} = req.body
+                const {campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, atletasRelacionadas, jogosCampeonato} = req.body
                 const newInfo = new SelecaofemininaModel({
-                    campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas
+                    campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, atletasRelacionadas, jogosCampeonato
                 })
                 const savedInfo = await newInfo.save()
 
@@ -55,11 +55,11 @@ const updateInfo = async ( req, res) => {
                     return res.status(403).send('Token inválido')
                 }
                 const {campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
-                jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario} = req.body
+                jogosCampeonato} = req.body
                 
                 const updatedInfo = await SelecaofemininaModel.findByIdAndUpdate(req.params.id, {
                     campeonato, local, ano, colocacaoFinal, chavePaises, treinadores, headCoach, ataqueCoach, defesaCoach, auxiliares, atletasRelacionadas, 
-                    jogosCampeonato, jogoNumero, paisContra, fase,placar, localJogo, dataCalendario, diaSemana, horario
+                    jogosCampeonato
                 })
                 res.status(200).json(updatedInfo)
             })
