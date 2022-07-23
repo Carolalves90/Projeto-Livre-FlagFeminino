@@ -5,7 +5,7 @@ const mongoose = require('./database/mongooseConect')
 const index = require('./routes/index')
 const colaboradorasRoutes = require('./routes/colaboradorasRoutes')
 const timesfemininosRoutes = require('./routes/timesfemininosRoutes')
-const selecaofemininaRoutes = require('./routes/selecaofemininoRoutes')
+const selecaofemininaRoutes = require('./routes/selecaofemininaRoutes')
 const jogosCampeonatoRoutes = require('./routes/jogosCampeonatoRoutes')
 
 const swaggerUi = require('swagger-ui-express')
