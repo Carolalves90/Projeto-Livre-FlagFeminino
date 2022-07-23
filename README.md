@@ -15,7 +15,19 @@ Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-b
 
 Esta API foi desenvolvida com a proposta de dar mais visibilidade à modalidade de *Flag Football* e em consequencia ao esporte feminino, mostrando a evolução da *Seleção Brasileira de Flag Football* dentro do esporte e nas competições de nível Mundial.
 
-O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que está acontecendo em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
+### História da Equipe
+
+O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que aconteceu este ano em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
+
+#### Histórico em competições
+
+- 2012 - Mundial de Flag Football na Suécia, estreia no campeonato | 12º lugar
+- 2014 - Mundial de Flag Football na Itália | 10º lugar
+- 2016 - Mundial de Flag Football em Miami | 6º lugar
+- 2018 - Mundial de Flag Football no Panamá | 6º lugar
+- 2021 - Mundial de Flag Football em Israel | 4º lugar
+- 2022 - The World Games Birmingham | 7º lugar
+- 2022 - Campeonato Sul-Americano de Flag Football | Programado para Dezembro
 
 ### O Que é o Flag Football 5x5? :football:
 
