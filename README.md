@@ -11,6 +11,7 @@ O Flag Football 5x5 é uma modalidade esportiva jogada entre duas equipes, sendo
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/82970341/179326705-41d9de75-221a-4a95-adb7-b88e9095897b.gif" width="600px">
+<p align="center"> Vídeo: <a href="https://flagfootballbrasil.com.br/">Flag Football Brasil</a> :video_camera: <p>
 </div>
 
 ### Objetivo
@@ -159,3 +160,8 @@ $ npm start
 | PUT    | /jogos/:id | Atualiza informações sobre o jogo       |   200  |  ✔️  |
 | DELETE | /jogos/:id | Remove o jogo cadastrado                |   200  |  ✔️  |
 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/82970341/180586135-bdd26188-06cd-4082-9059-135961136a67.gif" width="650px"/>
+<p align="center"><b>Arte:</b> <a href="https://instagram.com/jl_fioretti?igshid=YmMyMTA2M2Y=">Júlia L. Fioretti</a> :art:<p> 
+</div>
