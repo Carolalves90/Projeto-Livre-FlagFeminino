@@ -40,7 +40,31 @@ const getAllGames = async(req, res) => {
     }
 }
 
+const updateGame = async(req, res) => {
+    try{
+        const authHeader = req.get('authorization')
+        if(!authHeader){
+            return res.status(401).send('É necessário um token')
+        }
+            const token = authHeader.split(' ')[1]
+
+            await jwt.verify(token,SECRET, async function(erro){
+                if(erro){
+                    return res.status(403).send('Token inválido')
+                }
+                const {jogoNumero, paisContra, fase, placar, localJogo, dataCalendario, diaSemana, horario} = req.body
+                const updatedGame = await JogosCampeonatoModel.findByIdAndUpdate(req.params.id, {jogoNumero, paisContra, fase, placar, localJogo, dataCalendario, diaSemana, horario
+                })
+                res.status(200).json(updatedGame)
+            })
+    } catch (erro){
+        console.error(erro)
+        res.status(500).json({message: error.message})
+    }
+}
+
 module.exports =  {
     registerGame,
-    getAllGames
+    getAllGames,
+    updateGame
 }
