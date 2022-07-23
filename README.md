@@ -3,6 +3,18 @@
 <p align="center"><b>Delas Flag Football </b>:brazil:<p> 
 </h1>
 
+# <b> Projeto Final | Delas Flag Footbal :brazil: - {Reprograma} </b> :purple_heart:
+
+Projeto de conclusão do curso de Desenvolvimento Back-end - Todas em Tech | On16 da [{reprograma}](https://www.reprograma.com.br/).
+
+Este projeto é uma API REST que permite listar as conquistas da *Seleção Brasileira de Flag Football* e cadastrar times femininos da modalidade de Flag Football. Serão 2 API's, onde é possível visualizar as informações cadastradas, porém para manipular será necessário efetuar login.
+
+Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-br.herokuapp.com/), para acessar a documentação do projeto [acesse aqui](https://projeto-delas-flag-feminino-br.herokuapp.com/documentacao/) :football:
+
+### Objetivo
+
+Esta API foi desenvolvida com a proposta de dar mais visibilidade à modalidade de *Flag Football* e em consequencia ao esporte feminino, mostrando a evolução da *Seleção Brasileira de Flag Football* dentro do esporte e nas competições de nível Mundial.
+
 O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que está acontecendo em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
 
 ### O Que é o Flag Football 5x5? :football:
@@ -14,19 +26,6 @@ O Flag Football 5x5 é uma modalidade esportiva jogada entre duas equipes, sendo
 <p align="center"> Vídeo: <a href="https://flagfootballbrasil.com.br/">Flag Football Brasil</a> :video_camera: <p>
 </div>
 
-### Objetivo
-
-Esta API foi desenvolvida com a proposta de buscar mais visibilidade à modalidade de *Flag Football* e em consequencia ao esporte feminino, mostrando a evolução da *Seleção Brasileira de Flag Football* dentro do esporte e nas competições de nível Mundial.
-
-# <b> Projeto Final - {Reprograma} </b> :purple_heart:
-
-### Descrição da API :football:
-
-Este projeto é uma API REST que permite listar as conquistas da *Seleção Brasileira de Flag Football* e cadastrar times femininos da modalidade de Flag Football.
-
-Serão 2 API's, onde é possível visualizar as informações cadastradas, porém para manipular será necessário efetuar login.
-
-Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-br.herokuapp.com/), para acessar a documentação do projeto [acesse aqui](https://projeto-delas-flag-feminino-br.herokuapp.com/documentacao/) :football:
 
 API da *Seleção Feminina de Flag Football* onde iremos listar as competições que a participou, trazendo informações como:
  
@@ -160,6 +159,8 @@ $ npm start
 | PUT    | /jogos/:id | Atualiza informações sobre o jogo       |   200  |  ✔️  |
 | DELETE | /jogos/:id | Remove o jogo cadastrado                |   200  |  ✔️  |
 
+Projeto criado por [Carol Alves](https://github.com/Carolalves90) com a orientação da Professora maravilhosa [Mayhhara F Lilian](https://github.com/mflilian)!<br>
+Agradecimento especial à *Alessandra Rodrigues* :yellow_heart:, família, todas minhas colegas de turma e às pessoas que fizeram parte dessa construção e conhecimento! :football:
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/82970341/180586135-bdd26188-06cd-4082-9059-135961136a67.gif" width="650px"/>
