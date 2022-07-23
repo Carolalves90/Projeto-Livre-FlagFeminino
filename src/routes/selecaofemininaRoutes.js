@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const controller = require('../controller/selecaofemininoController')
+const controller = require('../controller/selecaofemininaController')
 
 router.post('/selecao', controller.createInfo)
 router.patch('/selecao/:id', controller.registerGame)
