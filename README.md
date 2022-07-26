@@ -11,6 +11,8 @@ Este projeto é uma API REST que permite listar as conquistas da *Seleção Bras
 
 Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-br.herokuapp.com/), para acessar a documentação do projeto [acesse aqui](https://projeto-delas-flag-feminino-br.herokuapp.com/documentacao/) :football:
 
+Visualize a apresentação [Delas Flag Football](https://www.canva.com/design/DAFHPJ7D7eA/lzFis29w0JEjAmC3zs1pFw/view#3) :desktop_computer:
+
 ### Objetivo
 
 Esta API foi desenvolvida com a proposta de dar mais visibilidade à modalidade de *Flag Football* e em consequencia ao esporte feminino, mostrando a evolução da *Seleção Brasileira de Flag Football* dentro do esporte e nas competições de nível Mundial.
