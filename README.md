@@ -184,6 +184,8 @@ $ npm start
 - Fazer a parte de Front-end;
 - Times cadastrados mostrar suas conquistas.
 
+#### Agradecimento :purple_heart:
+
 Projeto criado por [Carol Alves](https://github.com/Carolalves90) com a orientação da Professora maravilhosa [Mayhhara F Lilian](https://github.com/mflilian)!<br>
 Agradecimento especial à *Alessandra Rodrigues* :yellow_heart:, família, todas minhas colegas de turma e às pessoas que fizeram parte dessa construção e conhecimento! :football:
 
