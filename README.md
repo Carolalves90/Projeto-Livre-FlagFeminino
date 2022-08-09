@@ -173,6 +173,17 @@ $ npm start
 | PUT    | /jogos/:id | Atualiza informações sobre o jogo       |   200  |  ✔️  |
 | DELETE | /jogos/:id | Remove o jogo cadastrado                |   200  |  ✔️  |
 
+#### Sugestões para API da Seleção Feminina
+
+- Buscar por campeonato, ano, país contra;
+- Buscar times por estado, cidade;
+- Stats do jogo (play by play);
+- Nome completo das Atletas, Coach e Auxiliares;
+- Posição das Atletas e cargos da comissão técnica;
+- Número da camiseta das Atletas;
+- Fazer a parte de Front-end;
+- Times cadastrados mostrar suas conquistas.
+
 Projeto criado por [Carol Alves](https://github.com/Carolalves90) com a orientação da Professora maravilhosa [Mayhhara F Lilian](https://github.com/mflilian)!<br>
 Agradecimento especial à *Alessandra Rodrigues* :yellow_heart:, família, todas minhas colegas de turma e às pessoas que fizeram parte dessa construção e conhecimento! :football:
 
