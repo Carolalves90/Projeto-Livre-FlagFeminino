@@ -9,7 +9,7 @@ Projeto de conclusão do curso de Desenvolvimento Back-end - Todas em Tech | On1
 
 Este projeto é uma API REST que permite listar as conquistas da *Seleção Brasileira de Flag Football* e cadastrar times femininos da modalidade de Flag Football. Serão 2 API's, onde é possível visualizar as informações cadastradas, porém para manipular será necessário efetuar login.
 
-Aplicação disponível em [Projeto Delas](https://projeto-delas-flag-feminino-br.herokuapp.com/), para acessar a documentação do projeto [acesse aqui](https://projeto-delas-flag-feminino-br.herokuapp.com/documentacao/) :football:
+Aplicação disponível em [Projeto Delas](https://projeto-livre-flagfeminino-carolalves90.onrender.com), para acessar a documentação do projeto [acesse aqui](https://projeto-livre-flagfeminino-carolalves90.onrender.com/documentacao/) :football:
 
 Visualize a apresentação [Delas Flag Football](https://www.canva.com/design/DAFHPJ7D7eA/lzFis29w0JEjAmC3zs1pFw/view#3) :desktop_computer:
 
