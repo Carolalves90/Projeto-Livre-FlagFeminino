@@ -19,7 +19,7 @@ Esta API foi desenvolvida com a proposta de dar mais visibilidade à modalidade 
 
 ### História da Equipe
 
-O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que aconteceu este ano em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
+O Flag Football é uma modalidade que vem crescendo no país e tem sua história ainda desconhecida e pouco documentada, a seleção brasileira possui inúmeras passagens pelos jogos mundiais de flag, sendo atualmente a quarta melhor do mundo. A conquista da quarta colocação no mundial de flag garantiu vaga para disputar o The World Games que aconteceu em 2022 em Alabama, tal acontecimento é histórico para a modalidade, sendo a primeira participação do esporte dentro da competição, que reúne diversos esportes e é uma porta de entrada para as Olimpíadas.
 
 #### Histórico em competições
 
@@ -29,7 +29,7 @@ O Flag Football é uma modalidade que vem crescendo no país e tem sua história
 - 2018 - Mundial de Flag Football no Panamá | 6º lugar
 - 2021 - Mundial de Flag Football em Israel | 4º lugar
 - 2022 - The World Games Birmingham | 7º lugar
-- 2022 - Campeonato Sul-Americano de Flag Football | Programado para Dezembro
+- 2022 - Campeonato Sul-Americano de Flag Football | 1º lugar
 
 ### O Que é o Flag Football 5x5? :football:
 
